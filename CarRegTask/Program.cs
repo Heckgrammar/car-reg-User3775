@@ -9,8 +9,10 @@
             string carReg = Console.ReadLine();
             while (carReg.Length > 8)
             {
-                string displayMessge = " is not valid";
-                Console.Write(displayMessge);
+                string displayMessge = $"{carReg} is not valid";
+                Console.Write(displayMessge );
+                Console.WriteLine(" ");
+                Console.Write("Enter your car registration: ");
                 carReg = Console.ReadLine();
             }
             Console.Write("Enter your stay in hours: ");
@@ -21,7 +23,7 @@
             }
             else
             {
-                charge = hours * 2;
+                charge = (hours * 2) + 2;
             }
             Console.WriteLine(charge);
 
